@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Animiti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .common{
+            width: 280px;
+            height: 210px;
+            background:black;
+            background-image: url("./1.jpg");
+            background-size: cover;
+            box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
+            display: inline-block;
+        }
+        .box1{
+            position: relative;
+            overflow: hidden;
+            margin: 12px;
+            float: left;
+        }
+        .overlay1{
+            background:rgba(0,0,0,0.5);
+            position: absolute;
+            top:-212px;
+            transition-property: all;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in-out
+        }
+        .box1:hover .overlay1{
+            top: 0px;
+        }
+        .overlay1 > a{
+            width:40px;
+            height:40px;
+            background:white;
+            display:inline-block;
+            border-radius:40px;
+            text-align:center;
+            line-height:40px;
+            position:absolute;
+            top:90px;
+            left:90px;
+            color: #464646;
+        }
+        .tagb{
+            left: 140px !important;
+        }
+        .a5-1{
+            left:60px !important;
+        }
+        .a5-2{
+            left: 170px !important;
+        }
+        .overlay2{
+            background:rgba(0,0,0,0.5);
+            position: absolute;
+            left:-280px;
+            transition-property: all;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in-out
+        }
+        .box2{
+            position: relative;
+            overflow: hidden;
+            margin: 12px;
+            float: left;
+        }
+        .overlay2 > a{
+            width: 40px;
+            height: 40px;
+            background:white;
+            display: inline-block;
+            border-radius: 40px;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            top: 90px;
+            left: 90px;
+            color: #464646;
+        }
+        .box2:hover .overlay2{
+            left:0px;
+        }
+        .box3{
+            position: relative;
+            overflow: hidden;
+            margin: 12px;
+            float: left;
+        }
+        .overlay3{
+            background:rgba(0,0,0,0.5);
+            position: absolute;
+            bottom:-212px;
+            transition-property: all;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in-out
+        }
+        .overlay3 > a{
+            width: 40px;
+            height: 40px;
+            background:white;
+            display: inline-block;
+            border-radius: 40px;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            top: 90px;
+            left: 90px;
+            color: #464646;
+        }
+        .box3:hover .overlay3{
+            bottom:0px;
+        }
+        .box4{
+            position: relative;
+            overflow: hidden;
+            margin: 12px;
+            float: left;
+        }
+        .overlay4{
+            background:rgba(0,0,0,0.5);
+            position: absolute;
+            right:-280px;
+            transition-property: all;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in-out
+        }
+        .overlay4 > a{
+            width: 40px;
+            height: 40px;
+            background:white;
+            display: inline-block;
+            border-radius: 40px;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            top: 90px;
+            left: 90px;
+            color: #464646;
+        }
+        .box4:hover .overlay4{
+            right:0px;
+        }
+        .box5{
+            position: relative;
+            overflow: hidden;
+            float:left;
+            margin:12px;
+        }
+        .overlay5{
+            background:rgba(0,0,0,0.5);
+            position: absolute;
+            top: 0px;
+            opacity: 0;
+            transition-property: all;
+            transition-duration: 0.4s;
+            transition-timing-function: ease-in-out
+        }
+        .overlay5 > a{
+            width: 40px;
+            height: 40px;
+            background:white;
+            display: inline-block;
+            border-radius: 40px;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            top: 90px;
+            left: 90px;
+            color: #464646;
+        }
+        .box5:hover .overlay5{
+            right:0px;
+            opacity: 1;
+        }
+        .box5:hover > .overlay5 > .a5-1{
+            left: 90px !important;
+        }.box5:hover > .overlay5 > .a5-2{
+            left: 140px !important;
+        }
+        .a5-1,.a5-2{
+            transition: all 0.2s linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="common box1">
+        <div class="common overlay1">
+            <a href="#"> <i class="fas fa-link"></i> </a>
+            <a class="tagb" href="#"> <i class="fas fa-search"></i> </a>
+        </div>
+    </div>
+    <div class="common box2">
+        <div class="common overlay2">
+            <a href="#"> <i class="fas fa-link"></i> </a>
+            <a class="tagb" href="#"> <i class="fas fa-search"></i> </a>
+        </div>
+    </div>
+    <div class="common box3">
+        <div class="common overlay3">
+            <a href="#"> <i class="fas fa-link"></i> </a>
+            <a class="tagb" href="#"> <i class="fas fa-search"></i> </a>
+        </div>
+    </div>
+    <div class="common box4">
+        <div class="common overlay4">
+            <a href="#"> <i class="fas fa-link"></i> </a>
+            <a class="tagb" href="#"> <i class="fas fa-search"></i> </a>
+        </div>
+    </div>
+    <div class="common box5">
+        <div class="common overlay5">
+            <a class="a5-1" href="#"> <i class="fas fa-link"></i> </a>
+            <a class="a5-2" tag a href="#"> <i class="fas fa-search"></i> </a>
+        </div>
+    </div>
+</body>
+</html>
